@@ -12,6 +12,7 @@ RUN apt-get update -qqy \
 # USER seluser
 
 ENV DISPLAY :99
+ENV TZ=Europe/Moscow
 
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh
