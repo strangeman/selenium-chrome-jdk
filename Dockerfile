@@ -6,7 +6,7 @@ USER root
 # Install openjdk-8-jdk-headless 
 RUN apt-get update -qqy \
   && apt-get -qqy --no-install-recommends install \
-    openjdk-8-jdk-headless \
+    openjdk-8-jdk-headless libnss3 libgconf-2-4 \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 # USER seluser
